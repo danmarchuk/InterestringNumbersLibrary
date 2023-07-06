@@ -13,7 +13,7 @@ public class NumbersManager {
     let factsURL = "http://numbersapi.com/"
     public var delegate: NumbersManagerDelegate?
     public var isParseOneFact = true
-    var userInputNumber = ""
+    public var userInputNumber = ""
     // URL session injection for testing
     let session: URLSession
     public init(session: URLSession = URLSession.shared) {
