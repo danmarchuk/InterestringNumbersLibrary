@@ -12,7 +12,7 @@ public protocol NumbersManagerDelegate {
 public class NumbersManager {
     let factsURL = "http://numbersapi.com/"
     public var delegate: NumbersManagerDelegate?
-    var isParseOneFact = true
+    public var isParseOneFact = true
     var userInputNumber = ""
     // URL session injection for testing
     let session: URLSession
