@@ -4,7 +4,7 @@ import UIKit
 #endif
 import Foundation
 
-protocol NumbersManagerDelegate {
+public protocol NumbersManagerDelegate {
     func didUpdateNumberFacts(_ manager: NumbersManager, facts: [String: String])
     func didFailWithError(error: Error)
 }
@@ -20,7 +20,7 @@ public class NumbersManager {
         self.session = session
     }
     
-    func fetchFacts(numbers: String){
+    public func fetchFacts(numbers: String){
         let urlString = "\(factsURL)\(numbers)"
         performRequest(with: urlString)
     }
